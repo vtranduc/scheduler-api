@@ -10,6 +10,7 @@
     "test:migrate": "psql -o /dev/null scheduler_test < ./src/db/schema/create.sql && psql -o /dev/null scheduler_test < ./src/db/schema/test.sql",
     "test": "npm run test:migrate && jest --watch --runInBand"
   },
+  "proxy": "http://localhost:3001",
   "author": "",
   "license": "ISC",
   "dependencies": {
